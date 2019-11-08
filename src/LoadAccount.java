@@ -27,6 +27,8 @@ public class LoadAccount extends javax.swing.JFrame {
         textField1.setText("0");
         jLabel1.setVisible(false);
         textField2.setEditable(false);
+        textField3.setEditable(false);
+        textField4.setEditable(false);
     }
 
     /**
@@ -107,6 +109,7 @@ public class LoadAccount extends javax.swing.JFrame {
         } catch (BankingException msg) {
             jLabel1.setVisible(true);
             jLabel1.setText(msg.message);
+            displayDetails(false);
         }
        
         
